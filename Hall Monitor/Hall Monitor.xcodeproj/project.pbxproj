@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA32E29C1BDF1F4100919FA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32E29B1BDF1F4100919FA0 /* AppDelegate.swift */; };
+		DA32E29E1BDF1F4100919FA0 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32E29D1BDF1F4100919FA0 /* MasterViewController.swift */; };
+		DA32E2A01BDF1F4100919FA0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32E29F1BDF1F4100919FA0 /* DetailViewController.swift */; };
+		DA32E2A31BDF1F4100919FA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA32E2A11BDF1F4100919FA0 /* Main.storyboard */; };
+		DA32E2A51BDF1F4100919FA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA32E2A41BDF1F4100919FA0 /* Assets.xcassets */; };
+		DA32E2A81BDF1F4100919FA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA32E2A61BDF1F4100919FA0 /* LaunchScreen.storyboard */; };
+		DA32E2B31BDF1F4100919FA0 /* Hall_MonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32E2B21BDF1F4100919FA0 /* Hall_MonitorTests.swift */; };
+		DA32E2BE1BDF1F4100919FA0 /* Hall_MonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32E2BD1BDF1F4100919FA0 /* Hall_MonitorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA32E2AF1BDF1F4100919FA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA32E2901BDF1F4100919FA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA32E2971BDF1F4100919FA0;
+			remoteInfo = "Hall Monitor";
+		};
+		DA32E2BA1BDF1F4100919FA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA32E2901BDF1F4100919FA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA32E2971BDF1F4100919FA0;
+			remoteInfo = "Hall Monitor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA32E2981BDF1F4100919FA0 /* Hall Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hall Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA32E29B1BDF1F4100919FA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA32E29D1BDF1F4100919FA0 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		DA32E29F1BDF1F4100919FA0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DA32E2A21BDF1F4100919FA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA32E2A41BDF1F4100919FA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA32E2A71BDF1F4100919FA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA32E2A91BDF1F4100919FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA32E2AE1BDF1F4100919FA0 /* Hall MonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hall MonitorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA32E2B21BDF1F4100919FA0 /* Hall_MonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hall_MonitorTests.swift; sourceTree = "<group>"; };
+		DA32E2B41BDF1F4100919FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA32E2B91BDF1F4100919FA0 /* Hall MonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hall MonitorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA32E2BD1BDF1F4100919FA0 /* Hall_MonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hall_MonitorUITests.swift; sourceTree = "<group>"; };
+		DA32E2BF1BDF1F4100919FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA32E2951BDF1F4100919FA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA32E2AB1BDF1F4100919FA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA32E2B61BDF1F4100919FA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA32E28F1BDF1F4100919FA0 = {
+			isa = PBXGroup;
+			children = (
+				DA32E29A1BDF1F4100919FA0 /* Hall Monitor */,
+				DA32E2B11BDF1F4100919FA0 /* Hall MonitorTests */,
+				DA32E2BC1BDF1F4100919FA0 /* Hall MonitorUITests */,
+				DA32E2991BDF1F4100919FA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA32E2991BDF1F4100919FA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA32E2981BDF1F4100919FA0 /* Hall Monitor.app */,
+				DA32E2AE1BDF1F4100919FA0 /* Hall MonitorTests.xctest */,
+				DA32E2B91BDF1F4100919FA0 /* Hall MonitorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA32E29A1BDF1F4100919FA0 /* Hall Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				DA32E29B1BDF1F4100919FA0 /* AppDelegate.swift */,
+				DA32E29D1BDF1F4100919FA0 /* MasterViewController.swift */,
+				DA32E29F1BDF1F4100919FA0 /* DetailViewController.swift */,
+				DA32E2A11BDF1F4100919FA0 /* Main.storyboard */,
+				DA32E2A41BDF1F4100919FA0 /* Assets.xcassets */,
+				DA32E2A61BDF1F4100919FA0 /* LaunchScreen.storyboard */,
+				DA32E2A91BDF1F4100919FA0 /* Info.plist */,
+			);
+			path = "Hall Monitor";
+			sourceTree = "<group>";
+		};
+		DA32E2B11BDF1F4100919FA0 /* Hall MonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA32E2B21BDF1F4100919FA0 /* Hall_MonitorTests.swift */,
+				DA32E2B41BDF1F4100919FA0 /* Info.plist */,
+			);
+			path = "Hall MonitorTests";
+			sourceTree = "<group>";
+		};
+		DA32E2BC1BDF1F4100919FA0 /* Hall MonitorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA32E2BD1BDF1F4100919FA0 /* Hall_MonitorUITests.swift */,
+				DA32E2BF1BDF1F4100919FA0 /* Info.plist */,
+			);
+			path = "Hall MonitorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA32E2971BDF1F4100919FA0 /* Hall Monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA32E2C21BDF1F4100919FA0 /* Build configuration list for PBXNativeTarget "Hall Monitor" */;
+			buildPhases = (
+				DA32E2941BDF1F4100919FA0 /* Sources */,
+				DA32E2951BDF1F4100919FA0 /* Frameworks */,
+				DA32E2961BDF1F4100919FA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hall Monitor";
+			productName = "Hall Monitor";
+			productReference = DA32E2981BDF1F4100919FA0 /* Hall Monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA32E2AD1BDF1F4100919FA0 /* Hall MonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA32E2C51BDF1F4100919FA0 /* Build configuration list for PBXNativeTarget "Hall MonitorTests" */;
+			buildPhases = (
+				DA32E2AA1BDF1F4100919FA0 /* Sources */,
+				DA32E2AB1BDF1F4100919FA0 /* Frameworks */,
+				DA32E2AC1BDF1F4100919FA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA32E2B01BDF1F4100919FA0 /* PBXTargetDependency */,
+			);
+			name = "Hall MonitorTests";
+			productName = "Hall MonitorTests";
+			productReference = DA32E2AE1BDF1F4100919FA0 /* Hall MonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA32E2B81BDF1F4100919FA0 /* Hall MonitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA32E2C81BDF1F4100919FA0 /* Build configuration list for PBXNativeTarget "Hall MonitorUITests" */;
+			buildPhases = (
+				DA32E2B51BDF1F4100919FA0 /* Sources */,
+				DA32E2B61BDF1F4100919FA0 /* Frameworks */,
+				DA32E2B71BDF1F4100919FA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA32E2BB1BDF1F4100919FA0 /* PBXTargetDependency */,
+			);
+			name = "Hall MonitorUITests";
+			productName = "Hall MonitorUITests";
+			productReference = DA32E2B91BDF1F4100919FA0 /* Hall MonitorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA32E2901BDF1F4100919FA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Paul Davis";
+				TargetAttributes = {
+					DA32E2971BDF1F4100919FA0 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					DA32E2AD1BDF1F4100919FA0 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = DA32E2971BDF1F4100919FA0;
+					};
+					DA32E2B81BDF1F4100919FA0 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = DA32E2971BDF1F4100919FA0;
+					};
+				};
+			};
+			buildConfigurationList = DA32E2931BDF1F4100919FA0 /* Build configuration list for PBXProject "Hall Monitor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA32E28F1BDF1F4100919FA0;
+			productRefGroup = DA32E2991BDF1F4100919FA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA32E2971BDF1F4100919FA0 /* Hall Monitor */,
+				DA32E2AD1BDF1F4100919FA0 /* Hall MonitorTests */,
+				DA32E2B81BDF1F4100919FA0 /* Hall MonitorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA32E2961BDF1F4100919FA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA32E2A81BDF1F4100919FA0 /* LaunchScreen.storyboard in Resources */,
+				DA32E2A51BDF1F4100919FA0 /* Assets.xcassets in Resources */,
+				DA32E2A31BDF1F4100919FA0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA32E2AC1BDF1F4100919FA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA32E2B71BDF1F4100919FA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA32E2941BDF1F4100919FA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA32E2A01BDF1F4100919FA0 /* DetailViewController.swift in Sources */,
+				DA32E29E1BDF1F4100919FA0 /* MasterViewController.swift in Sources */,
+				DA32E29C1BDF1F4100919FA0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA32E2AA1BDF1F4100919FA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA32E2B31BDF1F4100919FA0 /* Hall_MonitorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA32E2B51BDF1F4100919FA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA32E2BE1BDF1F4100919FA0 /* Hall_MonitorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA32E2B01BDF1F4100919FA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA32E2971BDF1F4100919FA0 /* Hall Monitor */;
+			targetProxy = DA32E2AF1BDF1F4100919FA0 /* PBXContainerItemProxy */;
+		};
+		DA32E2BB1BDF1F4100919FA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA32E2971BDF1F4100919FA0 /* Hall Monitor */;
+			targetProxy = DA32E2BA1BDF1F4100919FA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA32E2A11BDF1F4100919FA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA32E2A21BDF1F4100919FA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA32E2A61BDF1F4100919FA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA32E2A71BDF1F4100919FA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA32E2C01BDF1F4100919FA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA32E2C11BDF1F4100919FA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA32E2C31BDF1F4100919FA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Hall Monitor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HM.Hall-Monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DA32E2C41BDF1F4100919FA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Hall Monitor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HM.Hall-Monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DA32E2C61BDF1F4100919FA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Hall MonitorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HM.Hall-MonitorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hall Monitor.app/Hall Monitor";
+			};
+			name = Debug;
+		};
+		DA32E2C71BDF1F4100919FA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Hall MonitorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HM.Hall-MonitorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hall Monitor.app/Hall Monitor";
+			};
+			name = Release;
+		};
+		DA32E2C91BDF1F4100919FA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Hall MonitorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HM.Hall-MonitorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Hall Monitor";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DA32E2CA1BDF1F4100919FA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Hall MonitorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HM.Hall-MonitorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Hall Monitor";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA32E2931BDF1F4100919FA0 /* Build configuration list for PBXProject "Hall Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA32E2C01BDF1F4100919FA0 /* Debug */,
+				DA32E2C11BDF1F4100919FA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA32E2C21BDF1F4100919FA0 /* Build configuration list for PBXNativeTarget "Hall Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA32E2C31BDF1F4100919FA0 /* Debug */,
+				DA32E2C41BDF1F4100919FA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DA32E2C51BDF1F4100919FA0 /* Build configuration list for PBXNativeTarget "Hall MonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA32E2C61BDF1F4100919FA0 /* Debug */,
+				DA32E2C71BDF1F4100919FA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DA32E2C81BDF1F4100919FA0 /* Build configuration list for PBXNativeTarget "Hall MonitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA32E2C91BDF1F4100919FA0 /* Debug */,
+				DA32E2CA1BDF1F4100919FA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA32E2901BDF1F4100919FA0 /* Project object */;
+}
