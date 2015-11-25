@@ -1,6 +1,6 @@
 An app designed to help students find the best options for on campus housing. 
 
-Features:
+Future Features:
 
 
 
