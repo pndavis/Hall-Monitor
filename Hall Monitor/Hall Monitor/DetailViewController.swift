@@ -38,6 +38,8 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
        centerMapOnLocation(initialLocation)
         
+        let a = Artwork((title: "King David Kalakaua", locationName: "Waikiki Gateway Park", discipline: "Sculpture",coordinate: CLLocationCoordinate2D(latitude: 21.283921, longitude: -157.831661))
+        
     }
 
     override func didReceiveMemoryWarning() {
