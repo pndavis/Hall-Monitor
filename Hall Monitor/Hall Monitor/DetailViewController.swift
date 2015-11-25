@@ -37,6 +37,7 @@ class DetailViewController: UIViewController {
         let initialLocation = CLLocation(latitude: 40.444271, longitude:-79.953291)
         // Do any additional setup after loading the view, typically from a nib.
        centerMapOnLocation(initialLocation)
+        
     }
 
     override func didReceiveMemoryWarning() {
