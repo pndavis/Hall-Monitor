@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Master-->
@@ -59,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1295" y="-565"/>
+            <point key="canvasLocation" x="984" y="-186"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
@@ -84,7 +85,7 @@
                         <animations/>
                     </navigationBar>
                     <connections>
-                        <segue destination="JEX-9P-axG" kind="relationship" relationship="rootViewController" id="GKi-kA-LjT"/>
+                        <segue destination="JEX-9P-axG" kind="relationship" relationship="rootViewController" id="UFc-l0-8GM"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SLD-UC-DBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -153,7 +154,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="41"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chs-ZW-On8">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chs-ZW-On8">
                                             <rect key="frame" x="137" y="10" width="327" height="22"/>
                                             <animations/>
                                             <constraints>
@@ -168,11 +169,12 @@
                                     <constraints>
                                         <constraint firstAttribute="centerX" secondItem="chs-ZW-On8" secondAttribute="centerX" constant="-0.5" id="5GY-hd-u9D"/>
                                         <constraint firstAttribute="centerY" secondItem="chs-ZW-On8" secondAttribute="centerY" id="KEo-xS-Bzz"/>
+                                        <constraint firstItem="chs-ZW-On8" firstAttribute="top" secondItem="82E-7r-sM0" secondAttribute="topMargin" constant="2" id="y4e-c0-xXG"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <segue destination="JEX-9P-axG" kind="presentation" trigger="accessoryAction" id="Ts4-7r-D1W"/>
+                                    <segue destination="JEX-9P-axG" kind="show" identifier="showDetail" id="Hz4-eZ-HF7"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -195,6 +197,6 @@
         <image name="apple" width="500" height="330"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ts4-7r-D1W"/>
+        <segue reference="Hz4-eZ-HF7"/>
     </inferredMetricsTieBreakers>
 </document>

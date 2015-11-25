@@ -53,11 +53,17 @@ class ImageTableViewController: UITableViewController {
         print("Test")
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
-                let object = arr[indexPath.row]
-                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem = object
-                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-                controller.navigationItem.leftItemsSupplementBackButton = true
+                //let object = arr[indexPath.row]
+                print(indexPath.section)
+                if let destination = segue.destinationViewController as? DetailViewController {
+                    destination.choice = arr[indexPath.section]
+                    
+                    //destination.detailItem = object
+                    destination.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+                    destination.navigationItem.leftItemsSupplementBackButton = true
+                    
+                }
+                
             }
         }
     }
@@ -85,6 +91,7 @@ class ImageTableViewController: UITableViewController {
         cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
         cell.textLabel?.text = arr[indexPath.section]
         cell.textLabel?.textAlignment = NSTextAlignment.Center
+        cell.textLabel?.font = UIFont.systemFontOfSize(18, weight: UIFontWeightLight)
         
         //cell.textLabel!.text = arr[indexPath.row];
 
