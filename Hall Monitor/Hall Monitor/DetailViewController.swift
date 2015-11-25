@@ -38,7 +38,8 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
        centerMapOnLocation(initialLocation)
         
-        let a = Artwork((title: "King David Kalakaua", locationName: "Waikiki Gateway Park", discipline: "Sculpture",coordinate: CLLocationCoordinate2D(latitude: 21.283921, longitude: -157.831661))
+        let a = Artwork(title: "Tower B", locationName: "Freshman Dorm", discipline: "Freshman",coordinate: CLLocationCoordinate2D(latitude: 40.442756, longitude: -79.956462))
+        mapView.addAnnotation(a)
         
     }
 
