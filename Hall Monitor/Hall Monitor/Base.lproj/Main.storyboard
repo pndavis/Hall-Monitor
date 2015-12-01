@@ -39,34 +39,27 @@
                                 <rect key="frame" x="180" y="436" width="241" height="144"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="241" id="Hmq-B5-dDA"/>
-                                    <constraint firstAttribute="height" constant="144" id="caS-HJ-4s7"/>
+                                    <constraint firstAttribute="width" constant="241" id="l7e-Uj-OAM"/>
                                 </constraints>
                             </mapView>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wyM-qp-Ku3">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wyM-qp-Ku3">
                                 <rect key="frame" x="20" y="186" width="560" height="227"/>
                                 <animations/>
                                 <connections>
                                     <segue destination="SwJ-hG-TQR" kind="embed" identifier="seg_imageSlider" id="9tS-Bw-KX0"/>
                                 </connections>
                             </containerView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bK4-W8-Utm">
-                                <rect key="frame" x="116" y="72" width="368" height="128"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wyM-qp-Ku3" firstAttribute="trailing" secondItem="svH-Pt-448" secondAttribute="trailingMargin" id="J1z-bb-LSB"/>
-                            <constraint firstItem="wyM-qp-Ku3" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="20" id="WUT-My-Anl"/>
-                            <constraint firstAttribute="bottom" secondItem="vd8-S5-WeC" secondAttribute="bottom" constant="20" symbolic="YES" id="XER-Jm-G8R"/>
-                            <constraint firstItem="wyM-qp-Ku3" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="ZBM-ln-orp"/>
-                            <constraint firstItem="wyM-qp-Ku3" firstAttribute="centerX" secondItem="vd8-S5-WeC" secondAttribute="centerX" id="eLe-xh-OLn"/>
-                            <constraint firstAttribute="bottom" secondItem="wyM-qp-Ku3" secondAttribute="bottom" constant="289" id="l44-ul-7YC"/>
+                            <constraint firstItem="wyM-qp-Ku3" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" id="3u0-0t-1FI"/>
+                            <constraint firstItem="wyM-qp-Ku3" firstAttribute="trailing" secondItem="svH-Pt-448" secondAttribute="trailingMargin" id="788-TW-aL0"/>
+                            <constraint firstItem="vd8-S5-WeC" firstAttribute="top" secondItem="wyM-qp-Ku3" secondAttribute="bottom" constant="23" id="AJE-y8-zrP"/>
+                            <constraint firstItem="wyM-qp-Ku3" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="122" id="Q3v-uT-9KU"/>
+                            <constraint firstAttribute="bottom" secondItem="vd8-S5-WeC" secondAttribute="bottom" constant="20" symbolic="YES" id="YfI-Ci-e7J"/>
+                            <constraint firstItem="vd8-S5-WeC" firstAttribute="centerX" secondItem="wyM-qp-Ku3" secondAttribute="centerX" id="mvd-c6-vxO"/>
+                            <constraint firstItem="wyM-qp-Ku3" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="tdT-YG-IhH"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -77,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="952" y="129"/>
+            <point key="canvasLocation" x="952" y="76"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">

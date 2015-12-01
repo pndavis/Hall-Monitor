@@ -12,6 +12,7 @@ class DetailViewController: UIViewController {
 
     
 
+    @IBOutlet weak var textBox: UITextView!
     @IBOutlet weak var header: UIImageView!
 
     @IBOutlet weak var mapView: MKMapView!
@@ -23,8 +24,18 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(white: 0.95, alpha: 1.0)
         navigationItem.title = choice
         print(choice)
+        let segmentFrame = CGRect(x: 10, y: 70.0, width: self.view.frame.size.width - 10*2, height: 40.0)
+        
+        let segmentView = SMSegmentView(frame: segmentFrame, separatorColour: UIColor(white: 0.95, alpha: 0.3), separatorWidth: 0.5, segmentProperties: [keySegmentTitleFont: UIFont.systemFontOfSize(12.0), keySegmentOnSelectionColour: UIColor(red: 245.0/255.0, green: 174.0/255.0, blue: 63.0/255.0, alpha: 1.0), keySegmentOffSelectionColour: UIColor.whiteColor(), keyContentVerticalMargin: Float(10.0)])
+        segmentView.addSegmentWithTitle("Clip", onSelectionImage: UIImage(named: "clip_light"), offSelectionImage: UIImage(named: "clip"))
+        segmentView.addSegmentWithTitle("Clip2", onSelectionImage: UIImage(named: "clip_light"), offSelectionImage: UIImage(named: "clip"))
+        segmentView.addSegmentWithTitle("Clip3", onSelectionImage: UIImage(named: "clip_light"), offSelectionImage: UIImage(named: "clip"))
+        segmentView.addSegmentWithTitle("Clip4", onSelectionImage: UIImage(named: "clip_light"), offSelectionImage: UIImage(named: "clip"))
+        
+        view.addSubview(segmentView)
         
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -51,7 +62,7 @@ class DetailViewController: UIViewController {
                 options.pageControlHidden = false
                 options.scrollDirection = .Horizontal
                 options.pageControlCurrentIndicatorTintColor = UIColor.whiteColor()
-                options.backgroundColor = UIColor.whiteColor()
+                options.backgroundColor = UIColor(white: 0.95, alpha: 1.0)
                 
                 imageSliderVC.options = options
                 
@@ -79,7 +90,7 @@ class DetailViewController: UIViewController {
                 options.pageControlHidden = false
                 options.scrollDirection = .Horizontal
                 options.pageControlCurrentIndicatorTintColor = UIColor.whiteColor()
-                options.backgroundColor = UIColor.whiteColor()
+                options.backgroundColor = UIColor(white: 0.95, alpha: 1.0)
                 
                 imageSliderVC.options = options
                 
@@ -109,11 +120,12 @@ class DetailViewController: UIViewController {
                 options.pageControlHidden = false
                 options.scrollDirection = .Horizontal
                 options.pageControlCurrentIndicatorTintColor = UIColor.whiteColor()
-                options.backgroundColor = UIColor.whiteColor()
+                options.backgroundColor = UIColor(white: 0.95, alpha: 1.0)
                 
                 imageSliderVC.options = options
                 
             }
+            textBox.text = "The Litchfield Towers (Tower A, B, and C) make up the largest residential building on campus. Tower C houses 435 men and women all in singles, with most of them upperclass students. Tower C has Sixteen floors, with a TV/study lounge on every third floor."
 
             
         }

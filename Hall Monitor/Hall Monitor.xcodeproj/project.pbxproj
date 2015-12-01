@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		8319B1B71C0672B500179DE7 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319B1B61C0672B500179DE7 /* Artwork.swift */; };
 		832319131C0653D7006734A9 /* ImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832319121C0653D7006734A9 /* ImageTableViewController.swift */; };
+		83CE82181C0D3C9E0056B6A6 /* SMSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE82161C0D3C9E0056B6A6 /* SMSegmentView.swift */; };
+		83CE82191C0D3C9E0056B6A6 /* SMSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE82171C0D3C9E0056B6A6 /* SMSegment.swift */; };
+		83CE821D1C0D3D780056B6A6 /* SMBasicSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE821A1C0D3D780056B6A6 /* SMBasicSegmentView.swift */; };
+		83CE821E1C0D3D780056B6A6 /* SMBasicSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE821B1C0D3D780056B6A6 /* SMBasicSegment.swift */; };
+		83CE821F1C0D3D780056B6A6 /* SMAlphaImageSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE821C1C0D3D780056B6A6 /* SMAlphaImageSegment.swift */; };
 		83E92DD71C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E92DD41C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.swift */; };
 		83E92DD81C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83E92DD51C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.xib */; };
 		83E92DD91C0D30BE00FCBF6C /* TNImageSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E92DD61C0D30BE00FCBF6C /* TNImageSliderViewController.swift */; };
@@ -42,6 +47,11 @@
 /* Begin PBXFileReference section */
 		8319B1B61C0672B500179DE7 /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		832319121C0653D7006734A9 /* ImageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewController.swift; sourceTree = "<group>"; };
+		83CE82161C0D3C9E0056B6A6 /* SMSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSegmentView.swift; sourceTree = "<group>"; };
+		83CE82171C0D3C9E0056B6A6 /* SMSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSegment.swift; sourceTree = "<group>"; };
+		83CE821A1C0D3D780056B6A6 /* SMBasicSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMBasicSegmentView.swift; sourceTree = "<group>"; };
+		83CE821B1C0D3D780056B6A6 /* SMBasicSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMBasicSegment.swift; sourceTree = "<group>"; };
+		83CE821C1C0D3D780056B6A6 /* SMAlphaImageSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMAlphaImageSegment.swift; sourceTree = "<group>"; };
 		83E92DD41C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TNImageSliderCollectionViewCell.swift; sourceTree = "<group>"; };
 		83E92DD51C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNImageSliderCollectionViewCell.xib; sourceTree = "<group>"; };
 		83E92DD61C0D30BE00FCBF6C /* TNImageSliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TNImageSliderViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +131,11 @@
 				83E92DD41C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.swift */,
 				83E92DD51C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.xib */,
 				83E92DD61C0D30BE00FCBF6C /* TNImageSliderViewController.swift */,
+				83CE82161C0D3C9E0056B6A6 /* SMSegmentView.swift */,
+				83CE82171C0D3C9E0056B6A6 /* SMSegment.swift */,
+				83CE821A1C0D3D780056B6A6 /* SMBasicSegmentView.swift */,
+				83CE821B1C0D3D780056B6A6 /* SMBasicSegment.swift */,
+				83CE821C1C0D3D780056B6A6 /* SMAlphaImageSegment.swift */,
 			);
 			path = "Hall Monitor";
 			sourceTree = "<group>";
@@ -276,12 +291,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8319B1B71C0672B500179DE7 /* Artwork.swift in Sources */,
+				83CE821E1C0D3D780056B6A6 /* SMBasicSegment.swift in Sources */,
 				83E92DD91C0D30BE00FCBF6C /* TNImageSliderViewController.swift in Sources */,
 				83E92DD71C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.swift in Sources */,
 				DA32E2A01BDF1F4100919FA0 /* DetailViewController.swift in Sources */,
+				83CE82191C0D3C9E0056B6A6 /* SMSegment.swift in Sources */,
+				83CE82181C0D3C9E0056B6A6 /* SMSegmentView.swift in Sources */,
 				DA32E29E1BDF1F4100919FA0 /* MasterViewController.swift in Sources */,
+				83CE821F1C0D3D780056B6A6 /* SMAlphaImageSegment.swift in Sources */,
 				DA32E29C1BDF1F4100919FA0 /* AppDelegate.swift in Sources */,
 				832319131C0653D7006734A9 /* ImageTableViewController.swift in Sources */,
+				83CE821D1C0D3D780056B6A6 /* SMBasicSegmentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
