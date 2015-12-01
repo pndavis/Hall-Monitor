@@ -3,3 +3,5 @@ http://fortawesome.github.io/Font-Awesome/icon/map-pin/
 http://fortawesome.github.io/Font-Awesome/icon/info/
 
 http://fortawesome.github.io/Font-Awesome/icon/picture-o/
+
+http://fortawesome.github.io/Font-Awesome/icon/video-camera/
