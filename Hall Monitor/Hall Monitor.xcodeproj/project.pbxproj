@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8319B1B71C0672B500179DE7 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319B1B61C0672B500179DE7 /* Artwork.swift */; };
 		832319131C0653D7006734A9 /* ImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832319121C0653D7006734A9 /* ImageTableViewController.swift */; };
+		83E92DD71C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E92DD41C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.swift */; };
+		83E92DD81C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83E92DD51C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.xib */; };
+		83E92DD91C0D30BE00FCBF6C /* TNImageSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E92DD61C0D30BE00FCBF6C /* TNImageSliderViewController.swift */; };
 		DA32E29C1BDF1F4100919FA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32E29B1BDF1F4100919FA0 /* AppDelegate.swift */; };
 		DA32E29E1BDF1F4100919FA0 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32E29D1BDF1F4100919FA0 /* MasterViewController.swift */; };
 		DA32E2A01BDF1F4100919FA0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32E29F1BDF1F4100919FA0 /* DetailViewController.swift */; };
@@ -39,6 +42,9 @@
 /* Begin PBXFileReference section */
 		8319B1B61C0672B500179DE7 /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		832319121C0653D7006734A9 /* ImageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewController.swift; sourceTree = "<group>"; };
+		83E92DD41C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TNImageSliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		83E92DD51C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNImageSliderCollectionViewCell.xib; sourceTree = "<group>"; };
+		83E92DD61C0D30BE00FCBF6C /* TNImageSliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TNImageSliderViewController.swift; sourceTree = "<group>"; };
 		DA32E2981BDF1F4100919FA0 /* Hall Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hall Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA32E29B1BDF1F4100919FA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA32E29D1BDF1F4100919FA0 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +118,9 @@
 				DA32E2A41BDF1F4100919FA0 /* Assets.xcassets */,
 				DA32E2A61BDF1F4100919FA0 /* LaunchScreen.storyboard */,
 				DA32E2A91BDF1F4100919FA0 /* Info.plist */,
+				83E92DD41C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.swift */,
+				83E92DD51C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.xib */,
+				83E92DD61C0D30BE00FCBF6C /* TNImageSliderViewController.swift */,
 			);
 			path = "Hall Monitor";
 			sourceTree = "<group>";
@@ -241,6 +250,7 @@
 				DA32E2A81BDF1F4100919FA0 /* LaunchScreen.storyboard in Resources */,
 				DA32E2A51BDF1F4100919FA0 /* Assets.xcassets in Resources */,
 				DA32E2A31BDF1F4100919FA0 /* Main.storyboard in Resources */,
+				83E92DD81C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +276,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8319B1B71C0672B500179DE7 /* Artwork.swift in Sources */,
+				83E92DD91C0D30BE00FCBF6C /* TNImageSliderViewController.swift in Sources */,
+				83E92DD71C0D30BE00FCBF6C /* TNImageSliderCollectionViewCell.swift in Sources */,
 				DA32E2A01BDF1F4100919FA0 /* DetailViewController.swift in Sources */,
 				DA32E29E1BDF1F4100919FA0 /* MasterViewController.swift in Sources */,
 				DA32E29C1BDF1F4100919FA0 /* AppDelegate.swift in Sources */,
