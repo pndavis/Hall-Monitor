@@ -65,6 +65,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
                     <connections>
+                        <outlet property="imageSlider" destination="wyM-qp-Ku3" id="VyY-R3-3p9"/>
                         <outlet property="mapView" destination="vd8-S5-WeC" id="Yfd-gm-Y6m"/>
                     </connections>
                 </viewController>

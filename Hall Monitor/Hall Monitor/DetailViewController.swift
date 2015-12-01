@@ -8,7 +8,7 @@
 
 import UIKit
 import MapKit
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, SMSegmentViewDelegate {
 
     
 
@@ -21,24 +21,30 @@ class DetailViewController: UIViewController {
     var choice: String!
     var imageSliderVC:TNImageSliderViewController!
     
+    @IBOutlet weak var imageSlider: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         self.view.backgroundColor = UIColor(white: 0.95, alpha: 1.0)
         navigationItem.title = choice
         print(choice)
         let segmentFrame = CGRect(x: 10, y: 70.0, width: self.view.frame.size.width - 10*2, height: 40.0)
         
         let segmentView = SMSegmentView(frame: segmentFrame, separatorColour: UIColor(white: 0.95, alpha: 0.3), separatorWidth: 0.5, segmentProperties: [keySegmentTitleFont: UIFont.systemFontOfSize(12.0), keySegmentOnSelectionColour: UIColor(red: 245.0/255.0, green: 174.0/255.0, blue: 63.0/255.0, alpha: 1.0), keySegmentOffSelectionColour: UIColor.whiteColor(), keyContentVerticalMargin: Float(10.0)])
-        segmentView.addSegmentWithTitle("Clip", onSelectionImage: UIImage(named: "clip_light"), offSelectionImage: UIImage(named: "clip"))
-        segmentView.addSegmentWithTitle("Clip2", onSelectionImage: UIImage(named: "clip_light"), offSelectionImage: UIImage(named: "clip"))
-        segmentView.addSegmentWithTitle("Clip3", onSelectionImage: UIImage(named: "clip_light"), offSelectionImage: UIImage(named: "clip"))
-        segmentView.addSegmentWithTitle("Clip4", onSelectionImage: UIImage(named: "clip_light"), offSelectionImage: UIImage(named: "clip"))
+        segmentView.addSegmentWithTitle("Info", onSelectionImage: UIImage.fontAwesomeIconWithName(FontAwesome.Info, textColor: UIColor.blueColor(), size: CGSize(width: 40,height: 40)), offSelectionImage: UIImage.fontAwesomeIconWithName(FontAwesome.Info, textColor: UIColor.blueColor(), size: CGSize(width: 40,height: 40)))
+        segmentView.addSegmentWithTitle("Images", onSelectionImage: UIImage.fontAwesomeIconWithName(FontAwesome.PictureO, textColor: UIColor.blueColor(), size: CGSize(width: 40,height: 40)), offSelectionImage: UIImage.fontAwesomeIconWithName(FontAwesome.PictureO, textColor: UIColor.blueColor(), size: CGSize(width: 40,height: 40)))
+        segmentView.addSegmentWithTitle("Map", onSelectionImage: UIImage.fontAwesomeIconWithName(FontAwesome.MapPin, textColor: UIColor.blueColor(), size: CGSize(width: 40,height: 40)), offSelectionImage: UIImage.fontAwesomeIconWithName(FontAwesome.MapPin, textColor: UIColor.blueColor(), size: CGSize(width: 40,height: 40)))
+        segmentView.addSegmentWithTitle("Tour", onSelectionImage: UIImage.fontAwesomeIconWithName(FontAwesome.VideoCamera, textColor: UIColor.blueColor(), size: CGSize(width: 40,height: 40)), offSelectionImage: UIImage.fontAwesomeIconWithName(FontAwesome.VideoCamera, textColor: UIColor.blueColor(), size: CGSize(width: 40,height: 40)))
         
+        segmentView.selectSegmentAtIndex(0)
+        segmentView.delegate = self
         view.addSubview(segmentView)
         
         // Do any additional setup after loading the view, typically from a nib.
-        
+    
         if choice == "Tower A"{
             //header.image = UIImage(named: "Towers")
             let initialLocation = CLLocation(latitude: 40.44251245014796, longitude:-79.95614781975746)
@@ -46,7 +52,7 @@ class DetailViewController: UIViewController {
             
             let a = Artwork(title: "Tower A", locationName: "Freshman Dorm", discipline: "Freshman",coordinate: CLLocationCoordinate2D(latitude: 40.44251245014796, longitude:-79.95614781975746))
             mapView.addAnnotation(a)
-            
+        
             
             let image1 = UIImage(named: "Towers")
             let image2 = UIImage(named: "Towers")
@@ -145,7 +151,20 @@ class DetailViewController: UIViewController {
         }
         
     }
-
+    func segmentView(segmentView: SMBasicSegmentView, didSelectSegmentAtIndex index: Int) {
+        /*
+        Replace the following line to implement what you want the app to do after the segment gets tapped.
+        */
+        print("Select segment at index: \(index)")
+        if(index == 1){
+            mapView.removeFromSuperview()
+            view.addSubview(imageSlider)
+        }
+        if(index == 2){
+            imageSlider.removeFromSuperview()
+            view.addSubview(mapView)
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
