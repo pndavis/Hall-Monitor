@@ -1,13 +1,16 @@
-An app designed to help students find the best options for on campus housing. 
+An app designed to help Pitt students find the best options for on campus housing. 
+
+Current Features:
+
+A different page for each building, containing text, pictures, and an embeded map.
+
 
 Future Features:
 
+The ability to select multiple dorms, and compare each of them on aspects such as price, residents, and location.
 
+Slideshows of the dorms.
 
-The ability to select multiple dorms, and compare each of them.
+Photospheres viewer that tracks with movement of the phone, allowing the user to explore the room.
 
-Look through pictures of the dorms, with pictures of each room.
-
-360 picture that tracks with your movement of the phone.
-
-An embeded map showing the location of each building.
+An campus map showing the location of each building, and allwoing the user to pick a individual building.
