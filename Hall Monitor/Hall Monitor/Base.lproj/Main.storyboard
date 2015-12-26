@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -13,7 +13,6 @@
                 <navigationController title="Master" id="RMx-3f-FxP" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <connections>
                         <segue destination="ggA-G9-Srp" kind="relationship" relationship="rootViewController" id="ZKK-DV-gWt"/>
@@ -37,20 +36,17 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="satellite" translatesAutoresizingMaskIntoConstraints="NO" id="vd8-S5-WeC">
                                 <rect key="frame" x="180" y="436" width="241" height="144"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="241" id="l7e-Uj-OAM"/>
                                 </constraints>
                             </mapView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wyM-qp-Ku3">
                                 <rect key="frame" x="20" y="186" width="560" height="227"/>
-                                <animations/>
                                 <connections>
                                     <segue destination="SwJ-hG-TQR" kind="embed" identifier="seg_imageSlider" id="9tS-Bw-KX0"/>
                                 </connections>
                             </containerView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wyM-qp-Ku3" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" id="3u0-0t-1FI"/>
@@ -93,7 +89,6 @@
                 <navigationController id="vC3-pB-5Vb" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DjV-YW-jjY">
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <connections>
                         <segue destination="JEX-9P-axG" kind="relationship" relationship="rootViewController" id="UFc-l0-8GM"/>
@@ -110,28 +105,25 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="42" sectionHeaderHeight="22" sectionFooterHeight="22" id="6GG-Zd-fYe">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" rowHeight="300" id="v9G-7M-bpa" customClass="ImageCell" customModule="Hall_Monitor" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="86" width="600" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v9G-7M-bpa" id="fgs-Rx-pfc">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="299"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="299.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mP5-BJ-IRu" userLabel="Container View">
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mP5-BJ-IRu" userLabel="Container View">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="fWL-es-lJF">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="fWL-es-lJF">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
-                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="fWL-es-lJF" secondAttribute="height" multiplier="2:1" priority="950" id="QV9-fH-mLH"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
-                                            <animations/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="centerX" secondItem="fWL-es-lJF" secondAttribute="centerX" id="JdM-t5-xZH"/>
@@ -143,7 +135,6 @@
                                             </constraints>
                                         </view>
                                     </subviews>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="mP5-BJ-IRu" secondAttribute="bottom" id="BcL-zl-mQL"/>
                                         <constraint firstItem="mP5-BJ-IRu" firstAttribute="leading" secondItem="fgs-Rx-pfc" secondAttribute="leading" id="aBj-VI-ecW"/>
@@ -151,7 +142,6 @@
                                         <constraint firstAttribute="trailing" secondItem="mP5-BJ-IRu" secondAttribute="trailing" id="tDB-qU-BAk"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <animations/>
                                 <connections>
                                     <outlet property="bottomSpaceConstraint" destination="LdC-Dy-biv" id="7Lx-R3-lve"/>
                                     <outlet property="containerView" destination="mP5-BJ-IRu" id="1xI-p2-5fm"/>
@@ -162,12 +152,11 @@
                                 <rect key="frame" x="0.0" y="386" width="600" height="42"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fko-5O-Fdo" id="82E-7r-sM0">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="41"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="41.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chs-ZW-On8">
                                             <rect key="frame" x="137" y="10" width="327" height="22"/>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="327" id="Gox-FJ-wQA"/>
                                             </constraints>
@@ -176,14 +165,12 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="centerX" secondItem="chs-ZW-On8" secondAttribute="centerX" constant="-0.5" id="5GY-hd-u9D"/>
                                         <constraint firstAttribute="centerY" secondItem="chs-ZW-On8" secondAttribute="centerY" id="KEo-xS-Bzz"/>
                                         <constraint firstItem="chs-ZW-On8" firstAttribute="top" secondItem="82E-7r-sM0" secondAttribute="topMargin" constant="2" id="y4e-c0-xXG"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <animations/>
                                 <connections>
                                     <segue destination="JEX-9P-axG" kind="show" identifier="showDetail" id="Hz4-eZ-HF7"/>
                                 </connections>
@@ -214,7 +201,6 @@
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nMv-ib-dwu" customClass="TNImageSliderCollectionViewCell" customModule="Hall_Monitor" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="560" height="227"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>

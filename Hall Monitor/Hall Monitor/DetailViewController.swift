@@ -37,6 +37,7 @@ class DetailViewController: UIViewController, SMSegmentViewDelegate {
         segmentView.addSegmentWithTitle("Info", onSelectionImage: UIImage.fontAwesomeIconWithName(FontAwesome.Info, textColor: UIColor.blueColor(), size: CGSize(width: 40,height: 40)), offSelectionImage: UIImage.fontAwesomeIconWithName(FontAwesome.Info, textColor: UIColor.blueColor(), size: CGSize(width: 40,height: 40)))
         segmentView.addSegmentWithTitle("Images", onSelectionImage: UIImage.fontAwesomeIconWithName(FontAwesome.PictureO, textColor: UIColor.blueColor(), size: CGSize(width: 40,height: 40)), offSelectionImage: UIImage.fontAwesomeIconWithName(FontAwesome.PictureO, textColor: UIColor.blueColor(), size: CGSize(width: 40,height: 40)))
         segmentView.addSegmentWithTitle("Map", onSelectionImage: UIImage.fontAwesomeIconWithName(FontAwesome.MapPin, textColor: UIColor.blueColor(), size: CGSize(width: 40,height: 40)), offSelectionImage: UIImage.fontAwesomeIconWithName(FontAwesome.MapPin, textColor: UIColor.blueColor(), size: CGSize(width: 40,height: 40)))
+        segmentView.addSegmentWithTitle("Reviews", onSelectionImage: UIImage.fontAwesomeIconWithName(FontAwesome.Star, textColor: UIColor.blueColor(), size: CGSize(width: 40,height: 40)), offSelectionImage: UIImage.fontAwesomeIconWithName(FontAwesome.Star, textColor: UIColor.blueColor(), size: CGSize(width: 40,height: 40)))
         segmentView.addSegmentWithTitle("Tour", onSelectionImage: UIImage.fontAwesomeIconWithName(FontAwesome.VideoCamera, textColor: UIColor.blueColor(), size: CGSize(width: 40,height: 40)), offSelectionImage: UIImage.fontAwesomeIconWithName(FontAwesome.VideoCamera, textColor: UIColor.blueColor(), size: CGSize(width: 40,height: 40)))
         
         segmentView.selectSegmentAtIndex(0)
@@ -55,8 +56,8 @@ class DetailViewController: UIViewController, SMSegmentViewDelegate {
         
             
             let image1 = UIImage(named: "Towers")
-            let image2 = UIImage(named: "Towers")
-            let image3 = UIImage(named: "Towers")
+            let image2 = UIImage(named: "towerA1")
+            let image3 = UIImage(named: "towerA2")
             
             if let image1 = image1, let image2 = image2, let image3 = image3 {
                 
@@ -73,6 +74,7 @@ class DetailViewController: UIViewController, SMSegmentViewDelegate {
                 imageSliderVC.options = options
                 
             }
+            //textBox.text = ""
             
         }
         if choice == "Tower B"{
@@ -101,6 +103,7 @@ class DetailViewController: UIViewController, SMSegmentViewDelegate {
                 imageSliderVC.options = options
                 
             }
+            //textBox.text = ""
 
             
 
@@ -113,13 +116,14 @@ class DetailViewController: UIViewController, SMSegmentViewDelegate {
             let a = Artwork(title: "Tower C", locationName: "Freshman and Upperclassmen Dorm", discipline: "Freshman",coordinate: CLLocationCoordinate2D(latitude: 40.442559400364935, longitude:-79.9569122493267))
             mapView.addAnnotation(a)
             let image1 = UIImage(named: "Towers")
-            let image2 = UIImage(named: "Towers")
-            let image3 = UIImage(named: "Towers")
+            let image2 = UIImage(named: "towerC1")
+            let image3 = UIImage(named: "TWCFLtriple")
+            let image4 = UIImage(named: "TWCFLnonetriple")
             
-            if let image1 = image1, let image2 = image2, let image3 = image3 {
+            if let image1 = image1, let image2 = image2, let image3 = image3, let image4 = image4 {
                 
                 // 1. Set the image array with UIImage objects
-                imageSliderVC.images = [image1, image2, image3]
+                imageSliderVC.images = [image1, image2, image3, image4]
                 
                 // 2. If you want, you can set some options
                 var options = TNImageSliderViewOptions()
@@ -131,7 +135,7 @@ class DetailViewController: UIViewController, SMSegmentViewDelegate {
                 imageSliderVC.options = options
                 
             }
-            textBox.text = "The Litchfield Towers (Tower A, B, and C) make up the largest residential building on campus. Tower C houses 435 men and women all in singles, with most of them upperclass students. Tower C has Sixteen floors, with a TV/study lounge on every third floor."
+            //textBox.text = "The Litchfield Towers (Tower A, B, and C) make up the largest residential building on campus. Tower C houses 435 men and women all in singles, with most of them upperclass students. Tower C has Sixteen floors, with a TV/study lounge on every third floor."
 
             
         }
