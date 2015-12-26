@@ -1,7 +1,9 @@
-http://fortawesome.github.io/Font-Awesome/icon/map-pin/
+Info: http://fortawesome.github.io/Font-Awesome/icon/map-pin/
 
-http://fortawesome.github.io/Font-Awesome/icon/info/
+Images: http://fortawesome.github.io/Font-Awesome/icon/info/
 
-http://fortawesome.github.io/Font-Awesome/icon/picture-o/
+Map: http://fortawesome.github.io/Font-Awesome/icon/picture-o/
 
-http://fortawesome.github.io/Font-Awesome/icon/video-camera/
+Reviews: http://fortawesome.github.io/Font-Awesome/icon/star/
+
+Tour: http://fortawesome.github.io/Font-Awesome/icon/video-camera/

@@ -1,0 +1,13 @@
+App Name: Hall Monitor
+
+Category: Life at Pitt
+
+Brief description: An app designed to help Pitt students find the best options for on campus housing.
+
+How will your app work?: Users will be presented with all the different buildings for on campus housing. Each one will contain information, pictures, map location, and reviews. 
+
+What problem or need does your application solve?: Choosing where to live on campus can be a hard decision. Each user has a different set of priorities that go into this decision. Hall Monitor gives users the tools they need to make an informed choice. 
+
+What are the main benefits for the app user?: A way to efficiently and effectively find out all that Pitt has to offer for those seeking on campus housing. 
+
+What is the target audience?: Those looking to live on the Pitt campus. 
