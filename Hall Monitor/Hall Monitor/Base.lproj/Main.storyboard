@@ -35,10 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="satellite" translatesAutoresizingMaskIntoConstraints="NO" id="vd8-S5-WeC">
-                                <rect key="frame" x="180" y="436" width="241" height="144"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="241" id="l7e-Uj-OAM"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="121" width="560" height="459"/>
                             </mapView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wyM-qp-Ku3">
                                 <rect key="frame" x="20" y="186" width="560" height="227"/>
@@ -46,16 +43,35 @@
                                     <segue destination="SwJ-hG-TQR" kind="embed" identifier="seg_imageSlider" id="9tS-Bw-KX0"/>
                                 </connections>
                             </containerView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Y5O-7X-9ZF">
+                                <rect key="frame" x="20" y="121" width="560" height="459"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uFp-vt-JZ4">
+                                <rect key="frame" x="20" y="31" width="560" height="494"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wyM-qp-Ku3" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" id="3u0-0t-1FI"/>
-                            <constraint firstItem="wyM-qp-Ku3" firstAttribute="trailing" secondItem="svH-Pt-448" secondAttribute="trailingMargin" id="788-TW-aL0"/>
-                            <constraint firstItem="vd8-S5-WeC" firstAttribute="top" secondItem="wyM-qp-Ku3" secondAttribute="bottom" constant="23" id="AJE-y8-zrP"/>
-                            <constraint firstItem="wyM-qp-Ku3" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="122" id="Q3v-uT-9KU"/>
-                            <constraint firstAttribute="bottom" secondItem="vd8-S5-WeC" secondAttribute="bottom" constant="20" symbolic="YES" id="YfI-Ci-e7J"/>
-                            <constraint firstItem="vd8-S5-WeC" firstAttribute="centerX" secondItem="wyM-qp-Ku3" secondAttribute="centerX" id="mvd-c6-vxO"/>
-                            <constraint firstItem="wyM-qp-Ku3" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="tdT-YG-IhH"/>
+                            <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="uFp-vt-JZ4" secondAttribute="bottom" constant="75" id="0Pa-FU-2vI"/>
+                            <constraint firstItem="Y5O-7X-9ZF" firstAttribute="trailing" secondItem="wyM-qp-Ku3" secondAttribute="trailing" id="2Fe-Q3-yIt"/>
+                            <constraint firstItem="wyM-qp-Ku3" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" id="9mH-nY-nhH"/>
+                            <constraint firstItem="uFp-vt-JZ4" firstAttribute="trailing" secondItem="wyM-qp-Ku3" secondAttribute="trailing" id="BZK-rg-zdY"/>
+                            <constraint firstItem="Y5O-7X-9ZF" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="57" id="KT6-5u-wjV"/>
+                            <constraint firstItem="Y5O-7X-9ZF" firstAttribute="top" secondItem="vd8-S5-WeC" secondAttribute="top" id="MCo-8t-8AG"/>
+                            <constraint firstItem="uFp-vt-JZ4" firstAttribute="leading" secondItem="wyM-qp-Ku3" secondAttribute="leading" id="N81-8s-xdG"/>
+                            <constraint firstItem="wyM-qp-Ku3" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="122" id="NMW-vd-TjB"/>
+                            <constraint firstItem="vd8-S5-WeC" firstAttribute="bottom" secondItem="Y5O-7X-9ZF" secondAttribute="bottom" id="O1F-0q-bZE"/>
+                            <constraint firstItem="vd8-S5-WeC" firstAttribute="trailing" secondItem="Y5O-7X-9ZF" secondAttribute="trailing" id="dsb-5g-GMT"/>
+                            <constraint firstItem="vd8-S5-WeC" firstAttribute="leading" secondItem="wyM-qp-Ku3" secondAttribute="leading" id="e96-OF-J6S"/>
+                            <constraint firstItem="Y5O-7X-9ZF" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="iLW-vd-aat"/>
+                            <constraint firstAttribute="bottom" secondItem="vd8-S5-WeC" secondAttribute="bottom" constant="20" symbolic="YES" id="lJt-Et-B0A"/>
+                            <constraint firstItem="uFp-vt-JZ4" firstAttribute="top" secondItem="svH-Pt-448" secondAttribute="topMargin" constant="31" id="pWt-8a-fSZ"/>
+                            <constraint firstItem="Y5O-7X-9ZF" firstAttribute="leading" secondItem="vd8-S5-WeC" secondAttribute="leading" id="wXr-G6-Jw6"/>
+                            <constraint firstItem="Y5O-7X-9ZF" firstAttribute="trailing" secondItem="svH-Pt-448" secondAttribute="trailingMargin" id="wZS-Sb-uOx"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -63,6 +79,8 @@
                     <connections>
                         <outlet property="imageSlider" destination="wyM-qp-Ku3" id="VyY-R3-3p9"/>
                         <outlet property="mapView" destination="vd8-S5-WeC" id="Yfd-gm-Y6m"/>
+                        <outlet property="review" destination="uFp-vt-JZ4" id="HXw-oT-NXO"/>
+                        <outlet property="text" destination="Y5O-7X-9ZF" id="OSJ-Nl-1Zb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>

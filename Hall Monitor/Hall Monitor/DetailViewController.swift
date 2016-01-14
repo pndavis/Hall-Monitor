@@ -15,8 +15,10 @@ class DetailViewController: UIViewController, SMSegmentViewDelegate {
     @IBOutlet weak var textBox: UITextView!
     @IBOutlet weak var header: UIImageView!
 
+    @IBOutlet var text: UITextView!
     @IBOutlet weak var mapView: MKMapView!
 
+    @IBOutlet var review: UIImageView!
     let regionRadius: CLLocationDistance = 75
     var choice: String!
     var imageSliderVC:TNImageSliderViewController!
@@ -26,7 +28,8 @@ class DetailViewController: UIViewController, SMSegmentViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        var compare = UIBarButtonItem(title: "Compare", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
+        navigationItem.rightBarButtonItem = compare
         
         self.view.backgroundColor = UIColor(white: 0.95, alpha: 1.0)
         navigationItem.title = choice
@@ -75,6 +78,7 @@ class DetailViewController: UIViewController, SMSegmentViewDelegate {
                 
             }
             //textBox.text = ""
+            
             
         }
         if choice == "Tower B"{
@@ -135,8 +139,73 @@ class DetailViewController: UIViewController, SMSegmentViewDelegate {
                 imageSliderVC.options = options
                 
             }
+            mapView.hidden = true
+            imageSlider.hidden = true
+            text.text = "Overview:\n\nThe Litchfield Towers (Tower A, B, and C) make up the largest residential building on campus. Tower C houses 435 men and women all in singles, with most of them upperclass students. Tower C has Sixteen floors, with a TV/study lounge on every third floor.\n\nPrice:\nSemester: $3,450\nYear: $6,900\n\nGeneral:\nThe Litchfield Towers (Tower A, B, and C) make up the largest residential building on campus. The three towers house 1,868 men and women in singles and doubles. In the lobby of the three towers facilities including Panther Central, the student mail room, a fitness center, laundry facilities, vending machines, e-mail kiosks, and Common Grounds coffee cart. Market Central is located on the lower level, as well as Market To-Go (take-out), and Quick Zone. A skywalk from the lobby spans Forbes Avenue, providing convenient access to the academic buildings south of Forbes.\n\nTower C houses 435 men and women all in singles, with most of them upperclass students. There are communal bathrooms and showers on each floor. A TV/study lounge is on every third floor. Three elevators service the building, the middle going to all floors, and the side elevators going to every three floors.\n\nFacts:\nHouses 435 men and women\nSixteen floors\nMostly upperclassmen\nAir-conditioned singles only\nCommunal bathroom/shower facilities on every floor\nTV/study lounge on every third floor\nWired and wireless internet in every room\nCable televison\nFire safety—alarm and sprinkler system throughout\nAccess to Housekeeping and Maintenance staff 24/7, 365 days a year\n\nDimensions:\nRooms: 17' x 6.5'.\nA space that is sectioned off from the rest of the room serves as closet space. It is open and does not have a door or curtain. \nClosets: 4' x 2.5' and have three wire frame shelves that are approximately 2' x 1.25' and one wire shelf that is approximately 3.25' x 1.25'."
             //textBox.text = "The Litchfield Towers (Tower A, B, and C) make up the largest residential building on campus. Tower C houses 435 men and women all in singles, with most of them upperclass students. Tower C has Sixteen floors, with a TV/study lounge on every third floor."
 
+            
+        }
+        if choice == "Bouquet Gardens"{
+            //header.image = UIImage(named: "Towers")
+            let initialLocation = CLLocation(latitude: 40.440745, longitude:-79.955178)
+            centerMapOnLocation(initialLocation)
+            
+            let a = Artwork(title: "Bouquet Gardens", locationName: "Upperclassmen Apartments", discipline: "UC",coordinate: CLLocationCoordinate2D(latitude: 40.440745, longitude: -79.955178))
+            mapView.addAnnotation(a)
+            let image1 = UIImage(named: "Towers")
+            let image2 = UIImage(named: "Towers")
+            let image3 = UIImage(named: "Towers")
+            
+            if let image1 = image1, let image2 = image2, let image3 = image3 {
+                
+                // 1. Set the image array with UIImage objects
+                imageSliderVC.images = [image1, image2, image3]
+                
+                // 2. If you want, you can set some options
+                var options = TNImageSliderViewOptions()
+                options.pageControlHidden = false
+                options.scrollDirection = .Horizontal
+                options.pageControlCurrentIndicatorTintColor = UIColor.whiteColor()
+                options.backgroundColor = UIColor(white: 0.95, alpha: 1.0)
+                
+                imageSliderVC.options = options
+                
+            }
+            //textBox.text = ""
+            
+            
+            
+        }
+        if choice == "Lothrop Hall"{
+            //header.image = UIImage(named: "Towers")
+            let initialLocation = CLLocation(latitude: 40.440745, longitude:-79.955178)
+            centerMapOnLocation(initialLocation)
+            
+            let a = Artwork(title: "Bouquet Gardens", locationName: "Upperclassmen Apartments", discipline: "UC",coordinate: CLLocationCoordinate2D(latitude: 40.440745, longitude: -79.955178))
+            mapView.addAnnotation(a)
+            let image1 = UIImage(named: "Towers")
+            let image2 = UIImage(named: "Towers")
+            let image3 = UIImage(named: "Towers")
+            
+            if let image1 = image1, let image2 = image2, let image3 = image3 {
+                
+                // 1. Set the image array with UIImage objects
+                imageSliderVC.images = [image1, image2, image3]
+                
+                // 2. If you want, you can set some options
+                var options = TNImageSliderViewOptions()
+                options.pageControlHidden = false
+                options.scrollDirection = .Horizontal
+                options.pageControlCurrentIndicatorTintColor = UIColor.whiteColor()
+                options.backgroundColor = UIColor(white: 0.95, alpha: 1.0)
+                
+                imageSliderVC.options = options
+                
+            }
+            //textBox.text = ""
+            review.image = UIImage(named: "review")
+            
             
         }
         
@@ -160,13 +229,29 @@ class DetailViewController: UIViewController, SMSegmentViewDelegate {
         Replace the following line to implement what you want the app to do after the segment gets tapped.
         */
         print("Select segment at index: \(index)")
+        if index == 0 {
+            text.hidden = false
+            imageSlider.hidden = true
+            mapView.hidden = true
+        }
         if(index == 1){
-            mapView.removeFromSuperview()
-            view.addSubview(imageSlider)
+            text.hidden = true
+            mapView.hidden = true
+            //view.addSubview(imageSlider)
+            imageSlider.hidden = false
+            review.hidden = true
         }
         if(index == 2){
-            imageSlider.removeFromSuperview()
-            view.addSubview(mapView)
+            text.hidden = true
+            imageSlider.hidden = true
+            mapView.hidden = false
+            review.hidden = true
+        }
+        if index == 3{
+            review.hidden = false
+            text.hidden = true
+            imageSlider.hidden = true
+            mapView.hidden = true
         }
     }
     
