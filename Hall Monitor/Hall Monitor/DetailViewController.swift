@@ -77,7 +77,7 @@ class DetailViewController: UIViewController, SMSegmentViewDelegate {
                 imageSliderVC.options = options
                 
             }
-            //textBox.text = ""
+            textBox.text = "Overview:\nTower A houses 664 men and women, most of them first-year students. All rooms are air-conditioned doubles. There are communal bathrooms and showers on each floor. A TV/study lounge is on every third floor.\n\nPrice:\nSemester:\t$3,150\nYear:\t\t$6,300\n\nGeneral:\nThe Litchfield Towers (Tower A, B, and C) make up the largest residential building on campus. The three towers house 1,868 men and women in singles and doubles. In the lobby of the three towers facilities including Panther Central, the student mail room, a fitness center, laundry facilities, vending machines, e-mail kiosks, and Common Grounds coffee cart. Market Central is located on the lower level, as well as Market To-Go (take-out), and Quick Zone. A skywalk from the lobby spans Forbes Avenue, providing convenient access to the academic buildings south of Forbes.\n\nFacts:\n-Houses 664 men and women\n-Ninteen floors\n-Mostly freshmen\n-All rooms are air-conditioned doubles\n-Communal bathroom/shower on every floor\n-TV/study lounge on every third floor\n-Wired and wireless internet in every room\n-Cable television\n\nDimensions:\nRooms: 17' x 11’.\nThe closets are approximately 4' x 2.5' and have three wire frame shelves that are approximately 2' x 1.25' and one wire shelf that is approximately 3.25' x 1.25'. A space that is sectioned off from the rest of the room serves as closet space. It is open and does not have a door or curtain."
             
             
         }
@@ -107,7 +107,7 @@ class DetailViewController: UIViewController, SMSegmentViewDelegate {
                 imageSliderVC.options = options
                 
             }
-            //textBox.text = ""
+            textBox.text = "Hi"
 
             
 
@@ -141,10 +141,7 @@ class DetailViewController: UIViewController, SMSegmentViewDelegate {
             }
             mapView.hidden = true
             imageSlider.hidden = true
-            text.text = "Overview:\n\nThe Litchfield Towers (Tower A, B, and C) make up the largest residential building on campus. Tower C houses 435 men and women all in singles, with most of them upperclass students. Tower C has Sixteen floors, with a TV/study lounge on every third floor.\n\nPrice:\nSemester: $3,450\nYear: $6,900\n\nGeneral:\nThe Litchfield Towers (Tower A, B, and C) make up the largest residential building on campus. The three towers house 1,868 men and women in singles and doubles. In the lobby of the three towers facilities including Panther Central, the student mail room, a fitness center, laundry facilities, vending machines, e-mail kiosks, and Common Grounds coffee cart. Market Central is located on the lower level, as well as Market To-Go (take-out), and Quick Zone. A skywalk from the lobby spans Forbes Avenue, providing convenient access to the academic buildings south of Forbes.\n\nTower C houses 435 men and women all in singles, with most of them upperclass students. There are communal bathrooms and showers on each floor. A TV/study lounge is on every third floor. Three elevators service the building, the middle going to all floors, and the side elevators going to every three floors.\n\nFacts:\nHouses 435 men and women\nSixteen floors\nMostly upperclassmen\nAir-conditioned singles only\nCommunal bathroom/shower facilities on every floor\nTV/study lounge on every third floor\nWired and wireless internet in every room\nCable televison\nFire safety—alarm and sprinkler system throughout\nAccess to Housekeeping and Maintenance staff 24/7, 365 days a year\n\nDimensions:\nRooms: 17' x 6.5'.\nA space that is sectioned off from the rest of the room serves as closet space. It is open and does not have a door or curtain. \nClosets: 4' x 2.5' and have three wire frame shelves that are approximately 2' x 1.25' and one wire shelf that is approximately 3.25' x 1.25'."
-            //textBox.text = "The Litchfield Towers (Tower A, B, and C) make up the largest residential building on campus. Tower C houses 435 men and women all in singles, with most of them upperclass students. Tower C has Sixteen floors, with a TV/study lounge on every third floor."
-
-            
+            text.text = "Overview:\nTower C houses 435 men and women all in singles, with most of them upperclass students. Tower C has Sixteen floors, with a TV/study lounge on every third floor.\n\nPrice:\nSemester:\t$3,450\nYear:\t\t$6,900\n\nGeneral:\nThe Litchfield Towers (Tower A, B, and C) make up the largest residential building on campus. The three towers house 1,868 men and women in singles and doubles. In the lobby of the three towers facilities including Panther Central, the student mail room, a fitness center, laundry facilities, vending machines, e-mail kiosks, and Common Grounds coffee cart. Market Central is located on the lower level, as well as Market To-Go (take-out), and Quick Zone. A skywalk from the lobby spans Forbes Avenue, providing convenient access to the academic buildings south of Forbes.\n\nFacts:\n-Houses 435 men and women\n-Sixteen floors\n-Mostly upperclassmen\n-Air-conditioned singles only\n-Communal bathroom/shower on every floor\n-TV/study lounge on every third floor\n-Wired and wireless internet in every room\n-Cable televison\n\nDimensions:\nRooms: 17' x 6.5'.\nA space that is sectioned off from the rest of the room serves as closet space. It is open and does not have a door or curtain. \nClosets: 4' x 2.5' and have three wire frame shelves that are approximately 2' x 1.25' and one wire shelf that is approximately 3.25' x 1.25'."
         }
         if choice == "Bouquet Gardens"{
             //header.image = UIImage(named: "Towers")
