@@ -2,7 +2,7 @@
 //  MasterViewController.swift
 //  Hall Monitor
 //
-//  Created by Paul Davis on 10/26/15.
+//  Created by Paul Davis and Chris Grant (Mostly Chris Grant)  on 10/26/15.
 //  Copyright © 2015 Paul Davis. All rights reserved.
 //
 

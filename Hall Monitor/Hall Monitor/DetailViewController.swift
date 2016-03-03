@@ -15,10 +15,10 @@ class DetailViewController: UIViewController, SMSegmentViewDelegate {
     @IBOutlet weak var textBox: UITextView!
     @IBOutlet weak var header: UIImageView!
 
+    @IBOutlet weak var review: UIImageView!
     @IBOutlet var text: UITextView!
     @IBOutlet weak var mapView: MKMapView!
 
-    @IBOutlet var review: UIImageView!
     let regionRadius: CLLocationDistance = 75
     var choice: String!
     var imageSliderVC:TNImageSliderViewController!
@@ -27,7 +27,6 @@ class DetailViewController: UIViewController, SMSegmentViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        review = UIImageView()
         var compare = UIBarButtonItem(title: "Compare", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
         navigationItem.rightBarButtonItem = compare
         
@@ -141,7 +140,7 @@ class DetailViewController: UIViewController, SMSegmentViewDelegate {
                 imageSliderVC.options = options
                 
             }
-            //review.hidden = true
+            review.hidden = true
             review.image = UIImage(named: "review")
             mapView.hidden = true
             imageSlider.hidden = true
